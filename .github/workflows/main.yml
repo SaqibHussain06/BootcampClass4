@@ -28,11 +28,18 @@ jobs:
       with:
         node-version: 12
         
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.3.0
+      with:
+        cmd: install
+        
+    - name: Build Yarn
+      run: yarn build
+    
     - name: Install Surge
       run: npm install --global surge
       
-      
     - name: Deploy to Surge
-      run: surge ./ day_night_app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build day_night_app1.surge.sh --token ${{secrets.SURGE_TOKEN}}
      
      

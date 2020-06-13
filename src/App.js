@@ -16,8 +16,13 @@ export default function App() {
       <br />
 
       <button onClick={() => setCount(count + 1)}>
-        Update Counter
+        Increase Counter
       </button>
+
+      <button onClick={() => setCount(count - 1 )}>
+        Decrease Counter
+      </button>
+
 
       <button onClick={() => setMorning(!isMorning)}> 
         Update Day

@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className={`box ${isMorning ? 'dayLight' : ''}`}>
 
-      <h1>Good {isMorning ? 'Morning!' : 'Night!'} from Aiman Saqib</h1>
+      <h1>Good {isMorning ? 'Morning!' : 'Night!'} from Saqib Hussain</h1>
 
       <Message counter={count} />
       <br />

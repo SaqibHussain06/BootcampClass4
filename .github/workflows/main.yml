@@ -29,10 +29,10 @@ jobs:
         node-version: 12
         
     - name: Install Surge
-      uses: npm install --global surge
+      run: npm install --global surge
       
       
     - name: Deploy to Surge
-      uses: surge ./ day_night_app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ day_night_app.surge.sh --token ${{secrets.SURGE_TOKEN}}
      
      

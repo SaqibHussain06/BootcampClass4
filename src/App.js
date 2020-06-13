@@ -22,7 +22,7 @@ export default function App() {
       <button onClick={() => setCount(count - 1 )}>
         Decrease Counter
       </button>
-
+      <br/>
 
       <button onClick={() => setMorning(!isMorning)}> 
         Update Day
